@@ -34,6 +34,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             (posts,error) in
             if posts != nil{
                 self.posts = posts!
+                self.posts = self.posts.reversed()
                 self.tableView.reloadData()
             }
         }
