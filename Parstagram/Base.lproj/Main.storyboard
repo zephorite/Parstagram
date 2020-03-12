@@ -99,36 +99,27 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="449"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s9T-D4-ucd">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s9T-D4-ucd">
                                                     <rect key="frame" x="11" y="11" width="352" height="352"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="s9T-D4-ucd" secondAttribute="height" multiplier="1:1" id="MwT-fA-cQg"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Caption" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIN-zD-qcY">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Caption" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIN-zD-qcY">
                                                     <rect key="frame" x="90" y="371" width="60" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZw-BC-onP">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZw-BC-onP">
                                                     <rect key="frame" x="11" y="371" width="37" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="kIN-zD-qcY" firstAttribute="leading" secondItem="EZw-BC-onP" secondAttribute="trailing" constant="8" id="FkH-KH-CC8"/>
-                                                <constraint firstAttribute="trailing" secondItem="kIN-zD-qcY" secondAttribute="trailing" constant="8" id="TzQ-zy-ZNO"/>
-                                                <constraint firstItem="kIN-zD-qcY" firstAttribute="top" secondItem="s9T-D4-ucd" secondAttribute="bottom" constant="8" id="WfQ-dY-L06"/>
-                                                <constraint firstItem="s9T-D4-ucd" firstAttribute="top" secondItem="19X-Pv-iIG" secondAttribute="topMargin" constant="8" id="cZJ-bo-NqY"/>
-                                                <constraint firstItem="EZw-BC-onP" firstAttribute="top" secondItem="s9T-D4-ucd" secondAttribute="bottom" constant="8" id="clz-3f-Oso"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="s9T-D4-ucd" secondAttribute="trailing" constant="8" id="ldr-N6-Hcp"/>
-                                                <constraint firstItem="EZw-BC-onP" firstAttribute="leading" secondItem="19X-Pv-iIG" secondAttribute="leading" constant="8" id="s3u-8p-N2D"/>
-                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kIN-zD-qcY" secondAttribute="bottom" constant="8" id="ssX-FT-S0B"/>
-                                                <constraint firstItem="s9T-D4-ucd" firstAttribute="leading" secondItem="19X-Pv-iIG" secondAttribute="leadingMargin" constant="8" id="xQr-rU-571"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="captionLabel" destination="kIN-zD-qcY" id="2NU-k0-HrG"/>
